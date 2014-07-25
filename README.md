@@ -3,6 +3,9 @@
 
 Human Activity Recognition Using Smartphones Dataset Refined Data Set 
 ==================================================================
+
+The original data set can be obtained though:https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
 DITEN - Universit?degli Studi di Genova.
@@ -22,7 +25,10 @@ The dataset includes the following files:
 
 - 'README.txt'
 
-- 'run_Analysis.R': The code which produce the tidy data set.
+- 'run_Analysis.R': The code which produce the tidy data set, which dose the following :
+   1. Merges the training and the test sets to create one data set.
+   2. Extracts only the measurements on the mean and standard deviation for each measurement. 
+   3. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 - 'Codebook.pdf': Illustrating the data in the tidy data set.
 
