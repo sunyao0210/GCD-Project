@@ -1,0 +1,144 @@
+The Codebook for Human Activity Recognition Using Smartphones Refined Dataset 
+=================
+
+The original dataset’s description can be obtained at: 
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+This dataset is obtained by doing the following:
+=================
+
+1.	Merges the training and the test sets to create one data set.
+2.	Extracts only the measurements on the mean and standard deviation for each measurement.
+3.	Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+The data set contains 10299 observations from both test and train set with 64 features and activity/subject information:
+
+1.	tBodyAcc-mean()-X	
+2.	tBodyAcc-mean()-Y	
+3.	tBodyAcc-mean()-Z	
+4.	tBodyAcc-std()-X	
+5.	tBodyAcc-std()-Y	
+6.	tBodyAcc-std()-Z	
+7.	tGravityAcc-mean()-X	
+8.	tGravityAcc-mean()-Y	
+9.	tGravityAcc-mean()-Z	
+10.	tGravityAcc-std()-X	
+11.	tGravityAcc-std()-Y	
+12.	tGravityAcc-std()-Z	
+13.	tBodyAccJerk-mean()-X	
+14.	tBodyAccJerk-mean()-Y	
+15.	tBodyAccJerk-mean()-Z	
+16.	tBodyAccJerk-std()-X	
+17.	tBodyAccJerk-std()-Y	
+18.	tBodyAccJerk-std()-Z	
+19.	tBodyGyro-mean()-X	
+20.	tBodyGyro-mean()-Y	
+21.	tBodyGyro-mean()-Z	
+22.	tBodyGyro-std()-X	
+23.	tBodyGyro-std()-Y	
+24.	tBodyGyro-std()-Z	
+25.	tBodyGyroJerk-mean()-X	
+26.	tBodyGyroJerk-mean()-Y	
+27.	tBodyGyroJerk-mean()-Z	
+28.	tBodyGyroJerk-std()-X	
+29.	tBodyGyroJerk-std()-Y	
+30.	tBodyGyroJerk-std()-Z	
+31.	tBodyAccMag-mean()	
+32.	tBodyAccMag-std()	
+33.	tGravityAccMag-mean()	
+34.	tGravityAccMag-std()	
+35.	tBodyAccJerkMag-mean()	
+36.	tBodyAccJerkMag-std()	
+37.	tBodyGyroMag-mean()	
+38.	tBodyGyroMag-std()	
+39.	fBodyAcc-mean()-X	
+40.	fBodyAcc-mean()-Y	
+41.	fBodyAcc-mean()-Z	
+42.	fBodyAcc-std()-X	
+43.	fBodyAcc-std()-Y	
+44.	fBodyAcc-std()-Z	
+45.	fBodyAccJerk-mean()-X	
+46.	fBodyAccJerk-mean()-Y	
+47.	fBodyAccJerk-mean()-Z	
+48.	fBodyAccJerk-std()-X	
+49.	fBodyAccJerk-std()-Y	
+50.	fBodyAccJerk-std()-Z	
+51.	fBodyGyro-mean()-X	
+52.	fBodyGyro-mean()-Y	
+53.	fBodyGyro-mean()-Z	
+54.	fBodyGyro-std()-X	
+55.	fBodyGyro-std()-Y	
+56.	fBodyGyro-std()-Z	
+57.	fBodyAccMag-mean()	
+58.	fBodyAccMag-std()	
+59.	fBodyBodyGyroMag-mean()	
+60.	fBodyBodyGyroMag-std()	
+61.	fBodyBodyGyroJerkMag-mean()	
+62.	fBodyBodyGyroJerkMag-std()
+63.	activity：Its activity label. 
+64.	Subject：- An identifier of the subject who carried out the experiment.	
+
+The Feature information is provided below, however the refined data se Extracts only the measurements on the mean and standard deviation for each measurement.
+=================
+
+
+Feature Selection 
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+tBodyAcc-XYZ
+tGravityAcc-XYZ
+tBodyAccJerk-XYZ
+tBodyGyro-XYZ
+tBodyGyroJerk-XYZ
+tBodyAccMag
+tGravityAccMag
+tBodyAccJerkMag
+tBodyGyroMag
+tBodyGyroJerkMag
+fBodyAcc-XYZ
+fBodyAccJerk-XYZ
+fBodyGyro-XYZ
+fBodyAccMag
+fBodyAccJerkMag
+fBodyGyroMag
+fBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+mean(): Mean value
+std(): Standard deviation
+mad(): Median absolute deviation 
+max(): Largest value in array
+min(): Smallest value in array
+sma(): Signal magnitude area
+energy(): Energy measure. Sum of the squares divided by the number of values. 
+iqr(): Interquartile range 
+entropy(): Signal entropy
+arCoeff(): Autorregresion coefficients with Burg order equal to 4
+correlation(): correlation coefficient between two signals
+maxInds(): index of the frequency component with largest magnitude
+meanFreq(): Weighted average of the frequency components to obtain a mean frequency
+skewness(): skewness of the frequency domain signal 
+kurtosis(): kurtosis of the frequency domain signal 
+bandsEnergy(): Energy of a frequency interval within the 64 bins of the FFT of each window.
+angle(): Angle between to vectors.
+
+Additional vectors obtained by averaging the signals in a signal window sample. These are used on the angle() variable:
+
+gravityMean
+tBodyAccMean
+tBodyAccJerkMean
+tBodyGyroMean
+tBodyGyroJerkMean
+
+
+
