@@ -1,8 +1,7 @@
 
 
 
-Human Activity Recognition Using Smartphones Dataset
-Refined Data Set 
+Human Activity Recognition Using Smartphones Dataset Refined Data Set 
 ==================================================================
 Jorge L. Reyes-Ortiz, Davide Anguita, Alessandro Ghio, Luca Oneto.
 Smartlab - Non Linear Complex Systems Laboratory
