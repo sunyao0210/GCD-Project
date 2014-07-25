@@ -1,5 +1,4 @@
 
-setwd('F:/Mooc/Getting & Cleaning data/UCI HAR Dataset')
 features<-read.table('features.txt')
 Features<-as.character(features[,2])
 Features[562]<-'subject'
